@@ -4,10 +4,14 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'My Express API',
+      title: 'Personal Notes API',
       version: '1.0.0',
-      description: 'A simple Express API documented with Swagger',
-    }
+      description: 'RESTful API for managing personal notes.',
+    },
+    tags: [
+      { name: 'Health', description: 'Service health' },
+      { name: 'Notes', description: 'Notes management' },
+    ],
   },
   apis: ['./src/routes/*.js'], // Path to the API docs
 };
